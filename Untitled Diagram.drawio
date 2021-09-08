@@ -1,0 +1,98 @@
+<mxfile host="app.diagrams.net" modified="2021-09-08T13:45:19.472Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36" etag="rWK8XI1WVifdckuUO63Z" version="14.9.2" type="github">
+  <diagram id="zgLd770Cf6noGVPnSQC5" name="Page-1">
+    <mxGraphModel dx="868" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CWv5y_CbBSuaEag7CATC-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CWv5y_CbBSuaEag7CATC-1" target="CWv5y_CbBSuaEag7CATC-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CWv5y_CbBSuaEag7CATC-1" value="Administrador" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="40" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CWv5y_CbBSuaEag7CATC-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CWv5y_CbBSuaEag7CATC-2" target="CWv5y_CbBSuaEag7CATC-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CWv5y_CbBSuaEag7CATC-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.462;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="CWv5y_CbBSuaEag7CATC-2" target="CWv5y_CbBSuaEag7CATC-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CWv5y_CbBSuaEag7CATC-2" value="Iniciar sesión" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="50" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CWv5y_CbBSuaEag7CATC-3" value="Identificar y autenticar sesión" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="40" width="160" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="CWv5y_CbBSuaEag7CATC-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="CWv5y_CbBSuaEag7CATC-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="225" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CWv5y_CbBSuaEag7CATC-8" value="Autorizar usuarios" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="205" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CWv5y_CbBSuaEag7CATC-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="CWv5y_CbBSuaEag7CATC-9" target="CWv5y_CbBSuaEag7CATC-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CWv5y_CbBSuaEag7CATC-36" value="Entrega&amp;nbsp; a usuario autorizado" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CWv5y_CbBSuaEag7CATC-35">
+          <mxGeometry x="-0.0449" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CWv5y_CbBSuaEag7CATC-9" value="Generar claves de autenticación usuarios autorizados" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="200" width="160" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="CWv5y_CbBSuaEag7CATC-10" value="Revisión de formularios externos" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="319" y="360" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CWv5y_CbBSuaEag7CATC-11" value="Resultado de validación de formularios" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="319" y="440" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CWv5y_CbBSuaEag7CATC-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="CWv5y_CbBSuaEag7CATC-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="118" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="610" y="550" />
+              <mxPoint x="610" y="319" />
+              <mxPoint x="90" y="319" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CWv5y_CbBSuaEag7CATC-34" value="Remite a Administrador" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CWv5y_CbBSuaEag7CATC-33">
+          <mxGeometry x="0.4478" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CWv5y_CbBSuaEag7CATC-12" value="Autorización de publicación del nuevo contacto" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="319" y="520" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CWv5y_CbBSuaEag7CATC-13" value="Publicación de contactos validados" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="120" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CWv5y_CbBSuaEag7CATC-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CWv5y_CbBSuaEag7CATC-14" target="CWv5y_CbBSuaEag7CATC-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CWv5y_CbBSuaEag7CATC-14" value="Usuarios Autorizados" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="400" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CWv5y_CbBSuaEag7CATC-15" value="" style="endArrow=none;dashed=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="CWv5y_CbBSuaEag7CATC-1" target="CWv5y_CbBSuaEag7CATC-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="160" as="sourcePoint" />
+            <mxPoint x="230" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CWv5y_CbBSuaEag7CATC-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CWv5y_CbBSuaEag7CATC-27" target="CWv5y_CbBSuaEag7CATC-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CWv5y_CbBSuaEag7CATC-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CWv5y_CbBSuaEag7CATC-27" target="CWv5y_CbBSuaEag7CATC-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CWv5y_CbBSuaEag7CATC-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CWv5y_CbBSuaEag7CATC-27" target="CWv5y_CbBSuaEag7CATC-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CWv5y_CbBSuaEag7CATC-27" value="Iniciar sesión" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="410" width="70" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
