@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Se necesita conexión de html y js-->
+    <!-- Se escribe el mensaje a traves de un marcador de datos con doble llave -->
+    <!-- Se debe crear un mensaje con un objeto (app) de tipo vue -->
+
+    <div id="aplicacion">
+       <h1>Listado de recomendados</h1>
+            <ol>
+                <li v-for="nombre in nombres"> {{nombre}} </li>
+            </ol>
+            <p>Nuevo recomendado <input type="text" v-on:keyup.enter="actualizarLista" v-model="nombre" placeholder="Enter para actualizar"></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+    <!-- // Atributos del objeto con notación jason con pares llaves valor
+    // se debe contar con la libreria disponible (página web https://vuejs.org/v2/guide/)
+    // la forma de tomar el dato y mostrarlo en html se llama interpolación con línea 20 (doble llave) -->
+
+    <script>
+        var app = new Vue ({
+            el:'#aplicacion',
+            data: {
+                nombre:'',
+                nombres:[]
+            }, 
+            methods:{
+                actualizarLista : function(){
+                    // Colocar en array actividades un elemento
+                    this.nombres.push(this.nombre);
+                    this.nombre=''
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>

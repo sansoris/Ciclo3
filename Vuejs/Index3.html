@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+    <!--Se necesita conexión de html y js-->
+    <!-- Se escribe el mensaje a traves de un marcador de datos con doble llave -->
+    <!-- Se debe crear un mensaje con un objeto (app) de tipo vue -->
+  
+    <div id="aplicacion" class="container">
+        <table class= "table table-striped" >
+            <tr>
+                <th>Id</th>
+                <th>Nombre completo</th>
+                <th>Teléfono</th>
+            </tr> 
+            <!-- se trae el for con la etiqueta template -->
+            <!-- marcador de datos en llaves -->
+            
+            <template v-for="persona in recomendados">
+                <tr>
+                    <td>{{persona.id}}</td>
+                    <td>{{persona.nombre}}</td>
+                    <td>{{persona.telefono}}</td>
+                </tr>
+            </template>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+    <!-- // Atributos del objeto con notación jason con pares llaves valor
+    // se debe contar con la libreria disponible (página web https://vuejs.org/v2/guide/)
+    // la forma de tomar el dato y mostrarlo en html se llama interpolación con línea 20 (doble llave) -->
+
+    <script>
+        var app = new Vue ({
+            el:'#aplicacion',
+            data: {
+               recomendados:[
+                {
+                    id: 321654,
+                   nombre:'Recomendado 1',
+                   telefono:300300301
+               },
+               {
+                    id: 987654,
+                   nombre:'Recomendado 2',
+                   telefono:300300302
+               },
+               {
+                    id: 741852,
+                   nombre:'Recomendado 3',
+                   telefono:300300303
+               },
+               {
+                    id: 852963,
+                   nombre:'Recomendado 4',
+                   telefono:300300304
+               },
+               {
+                    id: 963741,
+                   nombre:'Recomendado 5',
+                   telefono:300300305
+               }
+            ]
+            }
+        })
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>  
+</body>
+</html>

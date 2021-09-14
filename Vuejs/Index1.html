@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Se necesita conexión de html y js-->
+    <!-- Se escribe el mensaje a traves de un marcador de datos con doble llave -->
+    <!-- Se debe crear un mensaje con un objeto (app) de tipo vue -->
+    <!-- v-if directiva condicional sincrónica (v-else) (v-else if), pero requiere un objeto vue -->
+
+    <div id="aplicacion">
+        <p>Ingrese su edad: <input type="number" v-model="edad"></p>
+        <p v-if = "edad>0 && edad<18">Es menor de edad</p>
+        <p v-else-if = "edad>=18 && edad <=65" >Es un adulto</p>
+        <p v-else-if= "edad>=65 && edad!=null">Es adulto de la tercera edad</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+    <!-- // Atributos del objeto con notación jason con pares llaves valor
+    // se debe contar con la libreria disponible (página web https://vuejs.org/v2/guide/)
+    // la forma de tomar el dato y mostrarlo en html se llama interpolación con línea 20 (doble llave) -->
+
+    <script>
+        var app = new Vue ({
+            el:'#aplicacion',
+            data: {
+                edad: 0
+            }
+        })
+    </script>
+
+</body>
+</html>
