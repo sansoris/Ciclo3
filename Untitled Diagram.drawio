@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-09-14T17:01:49.983Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36" etag="qgJlmelw2Fm9lUA1Jt8o" version="15.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-14T17:21:45.096Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36" etag="VGITTK_TtrGNSMKFBqOX" version="15.1.1" type="github">
   <diagram id="zgLd770Cf6noGVPnSQC5" name="Page-1">
-    <mxGraphModel dx="923" dy="375" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1847" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -160,7 +160,7 @@
             <mxPoint x="-117" y="111" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3q7A0d4ADy9YNiZuYeLh-24" value="Fuente de información&amp;nbsp;" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="3q7A0d4ADy9YNiZuYeLh-22">
+        <mxCell id="3q7A0d4ADy9YNiZuYeLh-24" value="Inicio de modulo contacto" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="3q7A0d4ADy9YNiZuYeLh-22">
           <mxGeometry x="-1" relative="1" as="geometry">
             <mxPoint x="120" y="-195" as="offset" />
           </mxGeometry>
