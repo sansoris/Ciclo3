@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="button" onclick="contar()" value="contador">
+    </form>
+
+    <script>
+        let contador =0;
+        function contar(){
+            contador++;
+            alert(contador);
+        }
+
+    // Funciones js
+    // La mas sencilla se trabaja con la palabra function
+    // Elemento dentro de una jerarquía se encuentra en el árbold DOM
+
+    function saludar(){
+        document.write("Formula saludar en js: Hola! ¿Cómo estas?"+ '<br>')
+    }
+        saludar();
+    // Se puede colocar la instrucción dentro o fuera de la función antes del for o después
+    function generarTabla(){
+        let valor1 = parseInt(prompt("Ingrese la tabla que desea multiplicar: "))    
+        // con br se da un salto de línea
+        for(let i = 1; i<=10; i++){
+            let resultado1 = i*valor1;
+            document.write("El resultado de multiplicar: "+ valor1 + " X "+ i +" es = " + resultado1+ '<br>')
+        }
+    }
+    generarTabla();
+
+    // se convierte en parámetro
+    function generarTabla2(tabla){
+        for(let i = 1; i<=10; i++){
+            let resultado = i*tabla;
+            document.write("El resultado de multiplicar: "+ tabla + " X "+ i +" es = " + resultado+ '<br>')
+        }
+    }
+    let valor = parseInt(prompt("Ingrese la tabla que desea multiplicar: "))    
+    generarTabla2(valor);
+
+    // Función que retorna un valor
+    function calcularAreaRec(a,b){
+        let resultado2 = a*b;
+        return resultado2;
+    }
+    let alto = parseInt(prompt("Ingrese el alto: "));
+    let ancho = parseInt(prompt("Ingrese el ancho: "));
+    let area = calcularAreaRec(alto, ancho);
+    document.write("El área del rectangulo es: "+area);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!-- Ejercicio con Formularios -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- Etiquetas, cajas de texto, label y botones en diferentes divisiones -->
+    <div class="container">
+        <!-- También puede ser container-fluid para que tome de extremo a extermo de la pantalla -->
+        <div class="mb-3">
+            <!-- El for se utiliza para generar la relación entre el label y el id del input -->
+            <label for="usuario" class="form-label">Ingrese su usuario</label>
+            <input type="text" class="form-control" id="usuario">
+        </div>
+
+        <div class="mb-3">
+            <label for="clave" class="form-label">Ingrese su clave</label>
+            <input type="password" class="form-control" id="clave">
+        </div>
+
+        <div class="mb-3">
+            <label for ="comentarios" class= "form-label">Escriba aquí sus comentarios</label>
+            <textarea class = "form-control" name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+        </div>
+
+        <button type="submit" onclick = "verificar()" class="btn btn-primary">Aceptar</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>  
+    
+    <script>
+    const nombre = "pruebanombre"
+        const pw = "123"
+        function verificar(){
+            let nom1= document.getElementById("usuario").value;
+            let clave = document.getElementById("clave").value;
+            if (nombre==nom1 && pw==clave){
+                alert("Bienvenido a la plataforma")
+            }else{
+                alert("Ingrese datos válidos")
+            }
+        }
+        </script>
+</body>
+</html>

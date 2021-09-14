@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <form>
+        <p>Ingrese su usuario:<input type = "text" id= "usuario"></p>
+        <p>Ingrese su clave: <input type="password" id="clave"></p> 
+        <!-- <p><input type="button" value="Aceptar" onclick="mostrar()"></p> -->
+        <p><input type="button" value="Acceder" onclick="verificar()"></p>
+    </form>
+    <script>
+        // function mostrar(){
+        //     let nom = document.getElementById("nombre").value;
+        //     alert("El nombre ingresado fue: " + nom)
+        // }
+
+        // nombre y ps serán constantes no cambiaran
+        const nombre = "pruebanombre"
+        const pw = "123"
+        function verificar(){
+            let nom1= document.getElementById("usuario").value;
+            let clave = document.getElementById("clave").value;
+            if (nombre==nom1 && pw==clave){
+                alert("Bienvenido a la plataforma")
+            }else{
+                alert("Ingrese datos válidos")
+            }
+        }
+    </script>
+</body>
+</html>

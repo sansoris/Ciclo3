@@ -1,0 +1,23 @@
+<!-- Gráficos -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Con a se realiza el enlace con otro archivo -->
+    <!-- Cambio de color de elementos al pasar el mouse -->
+    <a href="#top" onmouseover= "pintar('#f00')" onmouseout="pintar('#000')">Rojo</a>
+    <a href="#top" onmouseover= "pintar('#0f0')" onmouseout="pintar('#000')">Verde</a>
+    <a href="#top" onmouseover= "pintar('#00f')" onmouseout="pintar('#000')">Azul</a>
+    <div id="cuadrado" style="background-color:black; width:400px; height:400px;"></div>
+    <script>
+        function pintar(color){
+            document.getElementById("cuadrado").style.backgroundColor=color;
+        }
+    </script>
+</body>
+</html>
