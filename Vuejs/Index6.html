@@ -1,0 +1,88 @@
+<!-- Base para trabajar en VUEJS -->
+<!-- Ejemplo de formulario -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+    <!--Se necesita conexión de html y js-->
+    <!-- Se escribe el mensaje a traves de un marcador de datos con doble llave -->
+    <!-- Se debe crear un mensaje con un objeto (app) de tipo vue -->
+
+    <div id="aplicacion" class = "container">
+        <!-- CREAR TABLA -->
+        <table class= "table table-striped">
+            <tr>
+                <th>Código</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+            </tr>
+                <!-- mostrar el contenido de la tabla, con una directiva -->
+            <template v-for ="articulo in articulos">
+                <tr>
+                    <!-- creación de marcadores con doble llave -->
+                    <td>{{articulo.codigo}} </td>
+                    <td>{{articulo.descripcion}} </td>
+                    <td>{{articulo.precio}} </td>
+                </tr>
+            </template>
+
+        </table>
+    <!-- submit propiedad de formulario, toma los datos para almacenarlo    -->
+        <form v-on:submit.prevent = "agregarArticulo" role= "form" >
+            <div class="form-group">
+                <label for="codigo">Ingrese el código</label>
+                <input type="number" id ="codigo" v-model="codigo" class= "form-control" >
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Ingrese la descripcion</label>
+                <input type="text" id ="descripcion" v-model="descripcion" class= "form-control" >
+            </div>
+            <div class="form-group">
+                <label for="precio">Ingrese el precio</label>
+                <input type="number" id ="precio" v-model="precio" class= "form-control" >
+            </div>
+            <button type ="submit" class= "btn btn-primary" mt="10px " > Agregar</button>
+        </form>
+       
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+    <!-- // Atributos del objeto con notación jason con pares llaves valor
+    // se debe contar con la libreria disponible (página web https://vuejs.org/v2/guide/)
+    // la forma de tomar el dato y mostrarlo en html se llama interpolación con línea 20 (doble llave) -->
+
+    <script>
+        var app = new Vue ({
+            el:'#aplicacion',
+            data: {
+               codigo: "",
+               descripcion:"",
+               precio:"",
+               articulos: [" "]
+            },
+            methods:{
+             agregarArticulo : function(){
+                this.articulos.push({
+                    codigo:this.codigo,
+                    descripcion: this.descripcion,
+                    precio: this.precio
+                })
+                // para borrar la celda
+                this.codigo="";
+                this.descripcion= "";
+                this.precio= "";
+             }
+            }
+
+        })
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>  
+</body>
+</html>
