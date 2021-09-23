@@ -1,0 +1,18 @@
+[{
+    "_id": 5,
+    "descripcion": "DD Sólido",
+    "precio": 450000,
+    "stock": 5
+},
+{
+    "_id": 6,
+    "descripcion": "Mouse inhalambrico",
+    "precio": 50000,
+    "stock": 10
+},
+{
+    "_id": 7,
+    "descripcion": "Monitor",
+    "precio": 600000,
+    "stock": 4
+}]
