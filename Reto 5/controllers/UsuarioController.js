@@ -16,23 +16,23 @@ module.exports = {
             next(e);
         }
     },
-    // query: async(req, res, next) => {
-    //     try {
-    //         const reg = await models.Usuario.findOne({ id: req.query.id });
-    //         if (!reg) {
-    //             res.status(404).send({
-    //                 message: 'El registro no existe'
-    //             });
-    //         } else {
-    //             res.status(404).json(reg);
-    //         }
-    //     } catch (e) {
-    //         res.status(404).send({
-    //             message: 'Ocurrió un error'
-    //         });
-    //         next(e);
-    //     }
-    // },
+    query: async(req, res, next) => {
+        try {
+            const reg = await models.Usuario.findOne({ id: req.query.id });
+            if (!reg) {
+                res.status(404).send({
+                    message: 'El registro no existe'
+                });
+            } else {
+                res.status(200).json(reg);
+            }
+        } catch (e) {
+            res.status(500).send({
+                message: 'Ocurrió un error'
+            });
+            next(e);
+        }
+    },
     list: async(req, res, next) => {
         try {
             let valor = req.query.valor;
@@ -62,17 +62,17 @@ module.exports = {
             next(e);
         }
     },
-    // remove: async(req, res, next) => {
-    //     try {
-    //         const reg = await models.Usuario.findByIdAndDelete({ id: req.body.id });
-    //         res.status(404).json(reg);
-    //     } catch (e) {
-    //         res.status(404).send({
-    //             message: 'Ocurrió un error'
-    //         });
-    //         next(e);
-    //     }
-    // },
+    remove: async(req, res, next) => {
+        try {
+            const reg = await models.Usuario.findByIdAndDelete({ id: req.body.id });
+            res.status(200).json(reg);
+        } catch (e) {
+            res.status(500).send({
+                message: 'Ocurrió un error'
+            });
+            next(e);
+        }
+    },
     activate: async(req, res, next) => {
         try {
             const reg = await models.Usuario.update({ estado: 1 }, { where: { id: req.body.id } });

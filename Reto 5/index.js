@@ -4,21 +4,20 @@ const cors = require('cors');
 const router = require('./routes');
 const path = require('path');
 
-// 1. no se esta utilizando
-// const bodyParser = require('body-parser');
+
+const bodyParser = require('body-parser');
 
 
 const app = express();
 app.use(morgan('dev'));
 app.use(cors());
-// app.use(bodyParser.json())
-// app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')))
 
-// retirar el nombre de usuario de la api, 
 app.use('/api', router);
 
 app.set('port', process.env.PORT || 3000);
